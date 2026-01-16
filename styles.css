@@ -1,0 +1,140 @@
+
+:root {
+	--bg: #19001a;
+	--accent: #2b7aef;
+	--text: #ffd9fa;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a, li, div {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+body {
+	margin: 0;
+    display: flex;
+	background: var(--bg);
+	color: var(--text);
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+    font-family: sans-serif;
+}
+
+main {
+	padding: 2rem;
+	max-width: 720px;
+	width: 100%;
+	text-align: center;
+}
+
+.lady-y {
+    font-weight: bold;
+    color: purple;
+    text-shadow: 0px 0px 5px purple,0px 0px 5px purple;
+    animation: pulse-purple 5.4s linear infinite;
+}
+
+.lady-y::after {
+    content: 'ᛘ';
+}
+
+#exotic-mist {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	background: radial-gradient(circle at 20% 50%, rgba(200, 200, 220, 0.2) 0%, transparent 50%),
+				radial-gradient(circle at 80% 80%, rgba(180, 180, 200, 0.15) 0%, transparent 50%);
+	box-shadow: inset 0 0 100px rgba(200, 200, 220, 0.15),
+				inset 0 0 200px rgba(180, 180, 200, 0.08);
+	animation: drift-mist 8s ease-in-out infinite;
+}
+
+#big-y {
+	font-size: 500px;
+    color: purple;
+    margin: 0rem;
+	display: inline-block;
+	padding: 0.1em 0.2em;
+	border-radius: 6px;
+	animation: pulse-purple 5.4s linear infinite;
+	will-change: box-shadow, transform;
+    cursor: pointer;
+}
+
+#big-y::after {
+    content: 'ᛘ';
+}
+
+@keyframes pulse-purple {
+	0% {
+		text-shadow: 0px 0px 5px purple,0px 0px 5px purple;
+		transform: scale(1);
+	}
+	50% {
+		text-shadow: 0px 0px 50px purple,0px 0px 50px purple;
+		transform: scale(1.02);
+	}
+	100% {
+		text-shadow: 0px 0px 5px purple,0px 0px 5px purple;
+		transform: scale(1);
+	}
+}
+
+
+
+@keyframes drift-mist {
+    0% {
+        filter: drop-shadow(0 0 60px rgba(128, 0, 128, 0.6))
+                drop-shadow(0 0 100px rgba(128, 0, 128, 0.4))
+                drop-shadow(0 0 150px rgba(128, 0, 128, 0.2));
+    }
+    50% {
+        filter: drop-shadow(200px 10px 80px rgba(128, 0, 128, 0.5))
+                drop-shadow(-100px -20px 120px rgba(128, 0, 128, 0.3))
+                drop-shadow(0 0 180px rgba(128, 0, 128, 0.15));
+    }
+    100% {
+        filter: drop-shadow(0 0 60px rgba(128, 0, 128, 0.6))
+                drop-shadow(0 0 100px rgba(128, 0, 128, 0.4))
+                drop-shadow(0 0 150px rgba(128, 0, 128, 0.2));
+    }
+}
+
+@keyframes scroll-text {
+	0% {
+		transform: translateX(0vw);
+	}
+	100% {
+		transform: translateX(100vw);
+	}
+}
+
+#scrolling-text-bg {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 200%;
+	height: 100%;
+	z-index: -2;
+	pointer-events: none;
+	overflow: hidden;
+	font-size: 18px;
+	color: rgba(150, 150, 150, 0.15);
+	line-height: 2.5;
+	white-space: pre-wrap;
+	word-break: break-word;
+	font-family: 'Courier New', monospace;
+	animation: scroll-text 30s linear infinite;
+	user-select: none;
+}
+
+#scrolling-text-bg::before {
+	content: 'enigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded\aenigma mystery whisper shadow divine ethereal void cipher veiled arcane secret hidden sacred unknowable transcendence essence shimmer veil shrouded';
+	white-space: pre-wrap;
+	display: block;
+	min-width: 100%;
+}
