@@ -135,4 +135,5 @@ main {
 	white-space: pre-wrap;
 	display: block;
 	min-width: 100%;
+    animation: ascii 5s infinite;
 }
